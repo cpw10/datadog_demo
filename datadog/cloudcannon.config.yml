@@ -1,0 +1,23 @@
+_structures:
+  logos:
+    values:
+      - image:
+        company:
+        link:
+
+_inputs:
+  layout: 
+    hidden: true
+
+collections_config:
+  pages:
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    include: index.html
+    path: /
+    output: true
+    filter:
+      base: none
+      include:
+        - index.html

@@ -1,0 +1,19 @@
+<header class="intro-header header-home">
+  <div id="datadog-video-container" class="section-video section-video-play text-center" style="top:-20px"><video poster="https://imgix.datadoghq.com/img/dd_homepage_3_comp_thumbnail.png?w=1700&amp;h=956&amp;fit=crop&amp;q=40&amp;fm=png&amp;auto=format" id="datadog-video" playsinline="" autoplay="" muted="" loop="" class="bgvid" preload="auto" data-play="true"><source src="https://imgix.datadoghq.com/video/dd_homepage_3_comp.mp4?fm=mp4&amp;auto=format&amp;fit=max"></video></div>
+    <div class=container>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="site-heading text-black pt-0 pt-md-2 pt-lg-7">
+            {% for block in blocks %}
+              {% bookshop "{{block._bookshop_name}}" bind: block %}
+            {% endfor %}
+          </div>
+
+          {% for block in below_blocks %}
+              {% bookshop "{{block._bookshop_name}}" bind: block %}
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,76 @@
+---
+layout: base.html
+content_blocks:
+  - _bookshop_name: layouts/hero
+    blocks: 
+      - _bookshop_name: elements/heading
+        element: h1
+        text: Modern monitoring & security
+      - _bookshop_name: elements/heading
+        element: h3
+        text: "See inside any stack, any app, at any scale, anywhere."
+      - _bookshop_name: layouts/button-holder
+        button_blocks:
+          - _bookshop_name: elements/button
+            type: primary
+            link:
+              text: Free trial
+              url: "#"
+          - _bookshop_name: elements/button
+            type: video
+            link:
+              text: SEE THE PLATFORM
+              url: "#"
+    below_blocks:
+      - _bookshop_name: elements/logos
+        logos:
+          - image: /images/pel.jpeg
+            company: Peloton
+            link: #
+          - image: /images/21.jpeg
+            company: 21st Century Fox
+            link: #
+          - image: /images/sam.jpeg
+            company: Samsung
+            link: #
+          - image: /images/whole.jpeg
+            company: Whole Foods
+            link: #
+          - image: /images/hashi.jpeg
+            company: HashiCorp
+            link: #
+  - _bookshop_name: layouts/banner
+    image: "https://imgix.datadoghq.com/img/homepage/banner/reduce_it_costs_ebook_banner_desktop_v2.png?&amp;ch=Width,DPR&amp;auto=format&amp;q=75"
+    blocks: 
+      - _bookshop_name: elements/heading
+        element: h5
+        text: "EBOOK: REDUCING IT COSTS WITH OBSERVABILITY"
+      - _bookshop_name: elements/heading
+        element: h2
+        text: "Learn five ways engineering teams can optimize spend"
+      - _bookshop_name: elements/button
+        type: secondary
+        link:
+          text: Get the Ebook
+          url: "#"
+  - _bookshop_name: layouts/features
+  - _bookshop_name: layouts/blog-container
+    image: "https://imgix.datadoghq.com/img/blog/state-of-devsecops/state-of-devsecops-2024/hero-final.png?auto=format&ar=1.5:1&fit=crop"
+    subtitle: "Read our report"
+    title: "State of DevSecOps"
+    body: "We analyzed data from thousands of applications and cloud environments to assess trends in application security posture and adoption of DevSecOps best practices."
+    button_text: Learn more
+  - _bookshop_name: layouts/career-container
+    image: "https://imgix.datadoghq.com/img/home/join_our_pack_desktop.jpg?auto=format&amp;w=1200"
+    subtitle: "Careers"
+    title: "Join our Pack"
+    text: "We are building the monitoring and security platform for developers, IT operations teams and business users in the cloud age. And we need talented people like you to join our team."
+    button_text: Learn more
+  - _bookshop_name: layouts/cta
+    title: Want to learn more about Datadog?
+    subtitle: Datadog hosts events both online and in-person. See all that Datadog has to offer visiting our Events &amp; Webinars hub.
+    link:
+      url: https://www.datadoghq.com/events-webinars/
+      text: learn more
+---
+{% bookshop_include "page" content_blocks: content_blocks %}

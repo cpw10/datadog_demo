@@ -1,0 +1,15 @@
+<div class="homepage-rotating-banner-set" data-set="default">
+  <div id="banner-0" class="homepage-rotating-banner" data-weight="0.2" data-index="0">
+     <div class="rotating-banner itcost-observability position-relative" style="background-image:url({{ image }})">
+        <div class="container position-relative py-6 py-lg-4">
+           <div class="row d-lg-flex">
+              <div class="text-container text-start text-white col-12 col-md-10 col-lg-12 pe-lg-5 py-xl-2">
+                {% for block in blocks %}
+                  {% bookshop "{{block._bookshop_name}}" bind: block %}
+                {% endfor %}
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>

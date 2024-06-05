@@ -1,0 +1,22 @@
+<div class="row position-relative">
+   <style type="text/css">:root{--callout-bg-gradient:linear-gradient(360deg, #8904FF, #110617)}:root{--callout-background:url(https://imgix.datadoghq.com/img/homepage/reinvent_high_res_banner_desktop.png)}@media(max-width:1200px){:root{--callout-background:url(https://imgix.datadoghq.com/img/homepage/reinvent_high_res_banner_tablet.png)}}@media(max-width:576px){:root{--callout-background:url(https://imgix.datadoghq.com/img/homepage/reinvent_high_res_banner_mobile.png)}}</style>
+   <div class="tw-callout-partial tw-w-full tw-bg-cover" style="padding-top: 2em; padding-bottom: 2em; background-image:var(--callout-background),var(--callout-bg-gradient)">
+      <div class="tw-container tw-flex tw-callout-flexbox tw-w-11/12 desktop:tw-w-3/5">
+         <span class="tw-text-white tw-font-bold tw-text-center tw-text-28 tw-leading-28 tablet:tw-text-36 tablet:tw-leading-40">
+            {{ title }}
+         </span>
+         <span class="subheader">
+            {{ subtitle }}
+         </span>
+         <div class="callout-btns tw-mt-5 tablet:tw-flex tablet:tw-justify-center">
+            <div class="tw-flex">
+               <a href="{{ link.url }}" class="corp-ui-button-cta-large corp-ui-button-cta-solid-white icon-start tw-w-full tablet:tw-w-fit tw-rounded tw-pb-px tw-gap-1 tw-flex tw-text-center tw-whitespace-nowrap tw-items-center tw-justify-center" aria-label="learn more">
+                  <span class="corp-ui-button-cta-text tw-pb-px">
+                     {{ link.text }}
+                  </span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

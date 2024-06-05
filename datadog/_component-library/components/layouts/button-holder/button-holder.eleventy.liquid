@@ -1,0 +1,5 @@
+<div class="text-center mt-1 mt-md-3">
+    {% for block in button_blocks %}
+        {% bookshop "{{block._bookshop_name}}" bind: block %}
+    {% endfor %}
+</div>

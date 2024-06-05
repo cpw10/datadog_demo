@@ -1,0 +1,14 @@
+{% case element %}
+  {% when "h1" %}
+    <h1 class=h1>{{ text }}</h1>
+  {% when "h2" %}
+    <h2 class=h2>{{ text }}</h2>
+  {% when "h3" %}
+    <h3 class=h3>{{ text }}</h3>
+  {% when "h4" %}
+    <h4 class=h4>{{ text }}</h4>
+  {% when "h5" %}
+    <h5 class=h5>{{ text }}</h5>
+  {% when "h6" %}
+    <h6 class=h6>{{ text }}</h6>
+{% endcase %}

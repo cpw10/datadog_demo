@@ -1,0 +1,3 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{127:function(d,l){const n=document.querySelector(".js-logo-download"),o=document.querySelector(".js-logo-download-div"),t=document.querySelector(".js-logo-download-btn");n&&(n.addEventListener("contextmenu",function(e){o.style.display=o.style.display==="none"?"block":"none",e.preventDefault()}),window.addEventListener("click",()=>{o.style.display=(o.style.display==="block","none")}),t.addEventListener("click",e=>{e.preventDefault(),window.location="https://www.datadoghq.com/about/resources/"}),window.addEventListener("resize",()=>{o.style.display=(o.style.display==="block","none")}))}}]);
+
+//# sourceMappingURL=navLogoDownload.10445bdbb136ea667bbe.js.map

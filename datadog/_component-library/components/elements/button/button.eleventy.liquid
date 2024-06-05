@@ -1,0 +1,20 @@
+{% if type == "video" %}
+    <a href="{{ link }}" class="btn btn-primary btn-outline modal-tour js-video-tour ms-0 ms-md-1 mt-1 mt-md-0" role=button>
+        <div class="d-flex justify-content-center align-items-end">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM6.26477 14.939L15.9033 10.1197L6.26477 5.30041V14.939Z" fill="#632CA6" />
+            </svg>
+            <span>
+                {{ text }}
+            </span>
+        </div>
+    </a>
+{% elsif type == "secondary" %}
+    <a href="{{ link.url }}" class="rotating-banner-btn btn btn-white btn-outline" target="">
+        {{ link.text }}
+    </a>
+{% else %}
+    <a href="{{ link.url }}" class="js-cta-HeaderCTA btn btn-gradient sign-up-trigger d-inline-flex justify-content-center align-items-center border-0" role=button>
+        {{ link.text }}
+    </a>
+{% endif %}
